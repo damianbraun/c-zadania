@@ -1,10 +1,10 @@
 CFLAGS=-g -Wall -std=c1x
 LDLIBS=-lm
 
+all : z2 z3 z4 z5
+
 clean :
 	rm *.out *.o
-
-all : z2 z3 z4 z5
 
 z2 : z2.c
 z3 : z3.c
