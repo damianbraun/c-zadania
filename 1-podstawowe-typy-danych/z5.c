@@ -28,7 +28,6 @@ int ask()
     printf("Nieprawidłowa jednostka: cm lub in\n");
   }
 
-  //printf("Wzrost:%f Jednostka:%s\n", wzrost, jednostka);
   return 0;
 }
 
