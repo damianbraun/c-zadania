@@ -24,11 +24,9 @@ int main() {
     else {
       dni = dni + 365;
     }
-
-    printf("%i, leap:%i, dni:%i\n", i, leap, dni);
   }
 
   int mnoznik = 24 * 60 * 60; // 24h * 60m * 60s
   int wynik = dni * mnoznik;
-  printf("Ostateczny wynik to: %i sekund\n", wynik);
+  printf("%i sekund\n", wynik);
 }
