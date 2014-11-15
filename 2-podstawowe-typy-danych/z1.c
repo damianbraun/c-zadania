@@ -8,9 +8,7 @@ int main() {
 
   int a = 2147483649;
   float b = 340282346638528859811704183484516925440.123;
-  float c = (float) 111;
   printf("przepelniony int: %d\n", a);
   printf("przepelnoiny float: %f\n", b);
-  printf("niedomiar float %f\n", c);
   return 0;
 }

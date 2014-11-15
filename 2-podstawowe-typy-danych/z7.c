@@ -71,9 +71,11 @@ unsigned czytajBity() {
     }// wstawic 1 jako skrajny prawy bit
     default : {
       exit(1);
+      //printf("error\n");
     }// kazdy inny znak jest bledem - przerwac
     }
   }
+  printf("unsig%u\n", w);
   return w;
 }
 
@@ -83,6 +85,6 @@ int main ()
   unsigned w;
   w = czytajBity();
 
-  printf("%u\n", w);
+  printf("iin%u\n", w);
   return 0;
 }
