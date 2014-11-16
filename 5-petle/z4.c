@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int sumarek(int n) {
+int sumator(int n) {
     int suma = 0;
     for (int i = 0; i <= n; i++) {
         suma += i;
@@ -12,9 +12,14 @@ int sumarek(int n) {
 
 int main() {
     int n;
-    while (n<1) {
-        printf("podaj n (n>0): \n");
-        scanf("%i", &n);
+    printf("podaj n (n>0): \n");
+    scanf("%i", &n);
+    if (n<1) {
+        puts("podaj liczbe wieksza niz 0");
+        return 1;
     }
-    printf("suma = %i\n", sumarek(n));
+    else {
+        printf("suma = %i\n", sumator(n));
+        return 0;
+    }
 }
