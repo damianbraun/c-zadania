@@ -4,10 +4,10 @@
 
 int main()
 {
-    int x, i=0;
-    for (x=1; x < 2010; x = pow(2, i)) {
-        printf("2^%d = %d\n", i, x);
-        ++i;
-    }
-    return 0;
+  int x, i=0;
+  for (x=1; x < 2010; x = pow(2, i)) {
+    printf("2^%d = %d\n", i, x);
+    ++i;
+  }
+  return 0;
 }
