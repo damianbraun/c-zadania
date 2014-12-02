@@ -1,7 +1,5 @@
 /* Liczba doskonała to liczba, która jest sumą podzielników od niej mniejszych. Na przykład 6 jest liczbą doskonałą ponieważ:
-
 1 + 2 + 3 = 6
-
 Napisz funkcję, która sprawdza czy podana liczba jest doskonała. Użyj tej funkcji do wypisania wszystkich liczb doskonałych mniejszych od 10 000.*/
 #include <stdio.h>
 
