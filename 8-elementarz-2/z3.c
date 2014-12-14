@@ -6,13 +6,15 @@ Ile wyrazów musisz wysumować, zanim po raz pierwszy otrzymasz kolejne przybli�
 
 float pi(int n) {
   float pi = 0.0;
+  int sign;
   for (int i = 1; i < n*2; i=i+2) {
     if (i % 4 == 1) {
-      pi = pi + (4 / (float) i);
+      sign = 1;
     }
-    else if (i % 4 == 3) {
-      pi = pi - (4 / (float) i);
+    else if (i % 4 == 3){
+      sign = -1;
     }
+    pi = pi + sign * (4 / (float) i);
   }
   return pi;
 }
