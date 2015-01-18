@@ -14,7 +14,7 @@ int main() {
     while (obw <= 1000) {
       b++;
       c = liczBok(a, b);
-      obw = liczObw(a, b, c); //TODO poprawić dublowanie wyników
+      obw = liczObw(a, b, c);
       pr(a,b,c,obw);
     }
     b=0; c=0; obw = liczObw(a, b, c);
@@ -22,13 +22,13 @@ int main() {
 }
 
 void pr(int a, int b, float c, float obw) {
-  if (c-trunc(c)==0) {
+  if (c-trunc(c) == 0 && a > b) {
     printf("a=%i b=%i c=%.3f obw=%.3f\n", a, b, c, obw);
   }
 }
 
 float liczObw(int a, int b, float c) {
-  float obw = a+b+c;
+  float obw = a + b + c;
   //printf("%i+%i+%.3f=%.3f\n", a, b, c, obw);
   return obw;
 }
